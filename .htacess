@@ -1,0 +1,8 @@
+# Index page is the dokuwiki page!
+Redirect /~eechris/kb/index.html /~eechris/dokuwiki/knowledge_base
+
+# Prevent files that should not be visible appearing on the web.
+<Files ~ .git|.gitignore|.htacess>
+  order allow,deny
+  deny from all
+</Files>
