@@ -509,10 +509,13 @@ Also see AdvancedOptions</pre>
 |{{{u}}}|undo!|
 |{{{.}}}|repeat last edit command|</pre>
 </div>
-<div title="CheatSheets" modifier="ChrisJobling" modified="200803281601" created="200803281456" tags="cheatsheets" changecount="6">
+<div title="CheatSheets" modifier="ChrisJobling" modified="200803291130" created="200803281456" tags="cheatsheets" changecount="7">
 <pre>* TextEditors
 * [[TiddlyWiki Markup|Format Codes]]
-</pre>
+* [[Regular Expressions]]</pre>
+</div>
+<div title="ChrisJobling" modifier="ChrisJobling" created="200803291134" changecount="2">
+<pre>Dr Chris P. Jobling is a lecturer in Internet and software technologies at Swansea University. His home page is [[here|http://eehope.swan.ac.uk/~eechris/dokuwiki/index.php]] and he has a blog at [[crispyj2.blogspot.com|http://crispyj2.blogspot.com]].</pre>
 </div>
 <div title="CloseOnCancelPlugin" modifier="MPTW" modified="200803240536" created="200803080053" tags="systemConfig">
 <pre>/***
@@ -541,6 +544,42 @@ merge(config.commands.cancelTiddler,{
 //}}}
 
 </pre>
+</div>
+<div title="Command Mode" modifier="ChrisJobling" modified="200803281839" created="200803281834" tags="vi [[Command Mode]] [[text editors]]" changecount="4">
+<pre>Command mode is a special mode in Vi in which you issue commands to change the document. In Command Mode you have the following command types available:
+* [[Movement|Movement in Vi]]
+* [[Open, Save+Quit|Open, Save and Quit in Vi]]
+* [[Windowing|Windowing in Vim]]
+* [[Basic Edits|Basic Edits in Vi]]
+* [[Cut + Paste|Cut and Paste (Vim)]]
+* [[Search/Replace|Search and Replace in Vi]]
+* [[Compound Commands|Compound Commands]]
+You need to switch from [[Command Mode]] to [[Insert Mode]] to insert text into a document.</pre>
+</div>
+<div title="Compound Change Commands" modifier="ChrisJobling" modified="200803291113" created="200803291102" tags="vi [[text editors]] commands compound change" changecount="3">
+<pre>|!Key sequence|!Action|
+|{{{c)}}}|replace rest of sentence|
+|{{{c$}}}|replace rest of line|
+</pre>
+</div>
+<div title="Compound Commands" modifier="ChrisJobling" modified="200803291103" created="200803291102" tags="vi [[text editors]] commands compound" changecount="2">
+<pre>The power of Vi
+&lt;&lt;slider viCompoundMotionCommands [[Compound Motion Commands]] motion! &quot;compound commands for movement&quot;&gt;&gt;
+&lt;&lt;slider viCompoundDeletionCommands [[Compound Deletion Commands]] deletion! &quot;compound commands for deletion&quot;&gt;&gt;
+&lt;&lt;slider viCompoundChangeCommands [[Compound Change Commands]] change! &quot;compound change commands&quot;&gt;&gt;</pre>
+</div>
+<div title="Compound Deletion Commands" modifier="ChrisJobling" modified="200803291113" created="200803291101" tags="vi [[text editors]] commands compound deletion" changecount="6">
+<pre>|!Key sequence|!Action|
+|{{{d3w}}}|delete next 3 words|
+|{{{d{ }}}|delete remainder of paragraph|
+|{{{d)}}}|delete remainder of sentence|</pre>
+</div>
+<div title="Compound Motion Commands" modifier="ChrisJobling" modified="200803291108" created="200803291100" tags="vi [[text editors]] commands compound movement" changecount="7">
+<pre>|!Key sequence|!Action|
+|{{{3l}}}|3 characters right &amp;rarr;|
+|{{{4)}}}|4 sentences &amp;rarr;|
+|{{{2b}}}|&amp;larr; 2 words|
+|{{{12} }}}|12 paragraphs &amp;rarr;|</pre>
 </div>
 <div title="CryptoFunctionsPlugin" modifier="MPTW" created="200710131134" tags="systemConfig excludeLists excludeSearch">
 <pre>/***
@@ -836,8 +875,7 @@ window.onClickTag = function(e) {
 </pre>
 </div>
 <div title="Format Codes" modifier="ChrisJobling" modified="200803281602" created="200701260332" tags="tiddlywiki wiki markup" server.type="file" server.host="tidhelp.tiddlyspot.com" server.page.revision="200701260332" changecount="4">
-<pre>
-TiddlyWiki uses Wiki style markup, a way of lightly &quot;tagging&quot; plain text so it can be transformed into HTML. To see the codes that create the following format samples, go into edit mode (by double-clicking within the tiddler or pressing the &quot;edit&quot; button in the hidden menu above). You might want to print out those codes to keep handy as you develop your portfolio. As you can see, you have a lot of control over your text's look and feel.
+<pre>TiddlyWiki uses Wiki style markup, a way of lightly &quot;tagging&quot; plain text so it can be transformed into HTML. To see the codes that create the following format samples, go into edit mode (by double-clicking within the tiddler or pressing the &quot;edit&quot; button in the hidden menu above). You might want to print out those codes to keep handy as you develop your portfolio. As you can see, you have a lot of control over your text's look and feel.
 
 ! Header Samples
 !Header 1
@@ -1028,6 +1066,15 @@ merge(config.macros,{
 |{{{b}}} / {{{B}}}|beginning of previous word/bigword|
 |{{{(}}} / {{{)}}}|beginning of previous/next sentence|
 |{{{ {}}} / {{{} }}}|beginning of current/next paragraph|</pre>
+</div>
+<div title="Insert Mode" modifier="ChrisJobling" modified="200803281901" created="200803281831" tags="vi [[text editors]] [[insert mode]]" changecount="7">
+<pre>Insert Mode is a special mode in Vi. Any of these commands will put you into insert mode. In insert mode, you can type in text, hit return for a new line, &amp;larr;, &amp;rarr;, &amp;uarr; &amp;darr; to move and {{{Delete}}} to delete the character to the left of the cursor. To return to [[Command Mode]], hit {{{Esc}}} ({{{Escape}}}).
+|!Key Sequence|!Action|
+|{{{i}}} / {{{a}}}|Insert before/after cursor|
+|{{{I}}} / {{{A}}}|Insert at beginning/end of current line|
+|{{{o}}} / {{{O}}}|open new line above/below current line, then insert|
+|{{{cc}}}|replace current line|
+|{{{c}}}//move//|replace to //move//|</pre>
 </div>
 <div title="InstantTimestampPlugin" modifier="MPTW" modified="200803240536" created="200803240239" tags="systemConfig">
 <pre>/***
@@ -1311,7 +1358,7 @@ window.getBackupPath = function(localPath) {
 GettingStarted
 </pre>
 </div>
-<div title="Movement in Vi" modifier="ChrisJobling" modified="200803281629" created="200803281542" tags="[[text editors]] movement vi" changecount="11">
+<div title="Movement in Vi" modifier="ChrisJobling" modified="200803291055" created="200803281542" tags="[[text editors]] movement vi" changecount="12">
 <pre>&lt;&lt;slider viHorizontalMovement [[Horizontal Movement in Vi]] horizontal &quot;Horizontal Movement in Vi&quot;&gt;&gt;
 &lt;&lt;slider viVerticalMovement [[Vertical Movement in Vi]] vertical &quot;Vertical Movement in Vi&quot;&gt;&gt;</pre>
 </div>
@@ -2199,6 +2246,16 @@ merge(config.commands,{
 
 </pre>
 </div>
+<div title="Search and Replace in Vi" modifier="ChrisJobling" modified="200803291127" created="200803291123" tags="vi [[text editors]] search replace" changecount="2">
+<pre>* //Search// in Vi uses [[regular expressions|Regular Expressions]] by default. Regular expressions are denoted by //reg// in the following table. 
+* //Replace// the replacement string, which can include [[back references|Regular Expression References]], is denoted as //rep// in the following table.
+|!Key Sequence|!Action|
+|{{{:s/reg/rep/}}}|Replace first occurence, current line|
+|{{{:s/reg/rep/g}}}|Replace all matches occurences, current line|
+|{{{%s/reg/rep/g}}}|Global replace|
+|{{{%s/reg/rep/gc}}}|Global replace with prompt|
+</pre>
+</div>
 <div title="SelectThemePlugin" modifier="MPTW" modified="200803240536" created="200803121559" tags="systemConfig">
 <pre>/***
 |Name:|SelectThemePlugin|
@@ -2375,6 +2432,9 @@ config.macros.sparkline.handler = function(place,macroName,params)
 
 }
 //}}}</pre>
+</div>
+<div title="StyleSheet" modifier="ChrisJobling" created="200803291046" changecount="1">
+<pre></pre>
 </div>
 <div title="TabAllTags" modifier="MPTW" modified="200803240536" created="200802220317">
 <pre>&lt;&lt;allTags excludeLists&gt;&gt;
@@ -3014,9 +3074,6 @@ config.formatters.unshift( {
 <div title="TiddlyWiki" modifier="ChrisJobling" modified="200803281600" created="200701210544" server.type="file" server.host="tidhelp.tiddlyspot.com" server.page.revision="200701210544" changecount="3" taggly.excerpts="excerpts">
 <pre>JeremyRusden's brilliant implementation of a [[Wiki]] in a single file, using javascript and html. Visit [[www.tiddlywiki.com|http://www.tiddlywiki.com/]] for more information.</pre>
 </div>
-<div title="TiddlyWiki Cheatsheet" modifier="ChrisJobling" created="200803281548" tags="cheatsheets TiddlyWiki" changecount="1">
-<pre></pre>
-</div>
 <div title="ToggleTagPlugin" modifier="MPTW" modified="200803240536" created="200803080053" tags="systemConfig">
 <pre>/***
 |Name:|ToggleTagPlugin|
@@ -3094,7 +3151,7 @@ merge(config.macros,{
 |{{{/string}}}|find //string//|
 |{{{n}}} / {{{N}}}|repeat search forwards/backwards|</pre>
 </div>
-<div title="Vi(m)" modifier="ChrisJobling" modified="200803281709" created="200803281503" tags="vi vim [[text editors]] [[IBM DeveloperWorks]] cheatsheets" changecount="26">
+<div title="Vi(m)" modifier="ChrisJobling" modified="200803291129" created="200803281503" tags="vi vim [[text editors]] [[IBM DeveloperWorks]] cheatsheets" changecount="30">
 <pre>!The ~Semi-Official IBM developerWorks^^TM^^ vi Cheat Sheet
 
 &lt;&lt;tabs tabsClass
@@ -3126,6 +3183,9 @@ If you find CamelCase ugly, just surround words with double square brackets as i
 |!Key Sequence|!Action|
 |{{{:sp}}} //filename//|open //filename// in a new split window|
 |{{{Cntrl-W Cntrl-W}}}|go to next window|</pre>
+</div>
+<div title="cheatsheets" modifier="ChrisJobling" created="200803291115" changecount="1">
+<pre></pre>
 </div>
 <div title="systemConfig" modifier="MPTW" created="200803240536" taggly.excerpts="descr" taggly.sortby="created" taggly.sortorder="desc">
 <pre></pre>
