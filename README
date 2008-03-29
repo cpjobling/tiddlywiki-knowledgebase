@@ -1,3 +1,39 @@
-TiddlyWiki knowledge base is a collection of TiddlyWiki wikis that are being used to capture reusable knowledge about all aspects of computing from cheat sheets to tricks and tips.
+TiddlyWiki Knowledge Base
+=========================
 
+TiddlyWiki knowledge base is a collection of TiddlyWiki wikis that are being
+used to capture reusable knowledge about all aspects of computing from cheat
+sheets to tricks and tips.
+
+
+Accessing the knowledge base
+----------------------------
+
+The home page of the knowledge-base is 
+
+   http://eehope.swan.ac.uk/~eechris/dokuwiki/knowledge_basei
+
+Aquiring a copy of the knowledge base
+-------------------------------------
+
+The TiddlyWiki Knowledgebase is hosted as a public repository on 
+http://githost.com you can download a copy of the complete knoweldge base using
+git:
+
+  git clone git://github.com/cpjobling/tiddlywiki-knowledgebase.git
+
+If you want to add-to or repurpose the knowlegebase, please fork the project and
+feed back patches.
+
+
+Licencing
+----------
+
+This work is licenced under the Creative Commons Attribution-Share Alike 3.0
+Unported License. To view a copy of this licence, visit
+http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative
+Commons, 171 Second Street, Suite 300, San Francisco, California 94105, USA.
+
+TiddlyWiki is released under the BSD Open Source licence. The TiddlyWikis in the
+knowledgebase may contain plugins that use the same or a different licence. 
 
