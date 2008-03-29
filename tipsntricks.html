@@ -509,9 +509,15 @@ Also see AdvancedOptions</pre>
 |{{{u}}}|undo!|
 |{{{.}}}|repeat last edit command|</pre>
 </div>
-<div title="CheatSheets" modifier="ChrisJobling" modified="200803291130" created="200803281456" tags="cheatsheets" changecount="7">
+<div title="BillJoy" modifier="ChrisJobling" modified="200803291308" created="200803291248" tags="people" changecount="3">
+<pre>Among [[many other things|http://en.wikipedia.org/wiki/Bill_Joy]] Bill Joy was the original developer of the //vi// text editor.</pre>
+</div>
+<div title="BramMoolenaar" modifier="ChrisJobling" created="200803291247" tags="people vim" changecount="1">
+<pre>Developer of Vim (vi - iMproved).</pre>
+</div>
+<div title="CheatSheets" modifier="ChrisJobling" modified="200803291200" created="200803281456" tags="cheatsheets" changecount="8">
 <pre>* TextEditors
-* [[TiddlyWiki Markup|Format Codes]]
+* [[TiddlyWiki|TiddlyWiki Cheats]]
 * [[Regular Expressions]]</pre>
 </div>
 <div title="ChrisJobling" modifier="ChrisJobling" created="200803291134" changecount="2">
@@ -874,6 +880,27 @@ window.onClickTag = function(e) {
 
 </pre>
 </div>
+<div title="Help, Documentation and Tutorials (Vim)" modifier="ChrisJobling" modified="200803291421" created="200803291320" tags="help vi [[text editors]]" changecount="19">
+<pre>In //vim//, the command {{{:help}}} displays the online help screen.
+&lt;&lt;slider viHelpPagePicture [[Vim Help Page (Picture)]] &quot;reveal picture&quot; &quot;A picture of the Vim help page&quot; &gt;&gt;
+This first screenfull of text specifies the keys that you'll need for basic Hoizontal and Vertical Movement in //vi//, as well as instructions for quitting //vim//. Read and make a note of these as well as the following help navigation commands:
+|!Key Sequence|!Resulting Action|
+|{{{Ctrl-]}}}|Follows the hyperlink (//tag//) under the cursor|
+|{{{Ctrl-T}}}|Jump back (origin of last link)|
+|{{{Ctrl-0}}}|Jump back again (previous link)|
+Practice the basic navigation now:
+# use the {{{j}}} and {{{k}}} keys to move the cursor into the word //bars// in the middle of the help screen.
+# press {{{Ctril-]}}} to go to the page called //Bars Example//. Read the page, it explains how //bars// are used to create hyperlinks in text document and also how you can use the mouse to navigate links.
+# press {{{Ctrl-T}}} to return to the first page of the help.
+# Press {{{j}}} a few more times until the screen is redisplayed with the word //doc-file-list// the top.
+&lt;&lt;slider viDocumentationPicture [[Vim Documentation (Picture)]] &quot;reveal picture&quot; &quot;A picture of the vim documentation contents&quot; &gt;&gt;
+You will see a collection of links leading to various other items of documentation that you can access from within //vim//. These include a (not so) //quick reference// and very detailed //user documentation//. 
+* It is well worth following the link labelled //tutorial// and investing the 30 minutes or so that it will take to work through it! 
+* If you prefer your documentation on line, the complete set of [[vim help pages|http://vimdoc.sourceforge.net/htmldoc/help.html]] is available on the internet.
+
+
+</pre>
+</div>
 <div title="HideWhenPlugin" modifier="MPTW" modified="200803240536" created="200803121603" tags="systemConfig">
 <pre>/***
 |Name:|HideWhenPlugin|
@@ -960,12 +987,12 @@ merge(config.macros,{
 
 </pre>
 </div>
-<div title="Horizontal Movement in Vi" modifier="ChrisJobling" modified="200803281630" created="200803281545" tags="vi movement horizontal [[text editors]]" changecount="16">
+<div title="Horizontal Movement in Vi" modifier="ChrisJobling" modified="200803291339" created="200803281545" tags="vi movement horizontal [[text editors]]" changecount="17">
 <pre>|!Key Sequence|!Result|
 |&amp;rarr;, {{{l}}}|right one character|
 |&amp;larr;, {{{h}}}|right one character|
-|{{{0}}}|beginning of line|
-|{{{$}}}|end of line|
+|{{{0}}}, {{{Home}}}|beginning of line|
+|{{{$}}}, {{{End}}}|end of line|
 |{{{w}}} / {{{W}}}|beginning of next word/bigword|
 |{{{e}}} / {{{E}}}|end of next work/bigword|
 |{{{b}}} / {{{B}}}|beginning of previous word/bigword|
@@ -1263,9 +1290,11 @@ window.getBackupPath = function(localPath) {
 GettingStarted
 </pre>
 </div>
-<div title="Movement in Vi" modifier="ChrisJobling" modified="200803291055" created="200803281542" tags="[[text editors]] movement vi" changecount="12">
+<div title="Movement in Vi" modifier="ChrisJobling" modified="200803291415" created="200803281542" tags="[[text editors]] movement vi" changecount="16">
 <pre>&lt;&lt;slider viHorizontalMovement [[Horizontal Movement in Vi]] horizontal &quot;Horizontal Movement in Vi&quot;&gt;&gt;
-&lt;&lt;slider viVerticalMovement [[Vertical Movement in Vi]] vertical &quot;Vertical Movement in Vi&quot;&gt;&gt;</pre>
+&lt;&lt;slider viVerticalMovement [[Vertical Movement in Vi]] vertical &quot;Vertical Movement in Vi&quot;&gt;&gt;
+
+''Note'', as you can see from the chart, //vi// honours the normal arrow keys as alternatives to the //vi// navigation keys {{{i}}}, {{{j}}}, {{{k}}} and {{{l}}}. However, you may find that the //vi//'s defaults are easier to find, particularly if you touch type! In addition, the {{{Home}}} and {{{End}}} keys are equivalent to {{{0}}} (beginning of line) and {{{$}}} (end of line) respectively.</pre>
 </div>
 <div title="MptwBlack" modifier="MPTW" modified="200803240536" created="200803062257" tags="systemPalette">
 <pre>Name: MptwBlack
@@ -2979,7 +3008,18 @@ config.formatters.unshift( {
 <div title="TiddlyWiki" modifier="ChrisJobling" modified="200803291138" created="200701210544" server.type="file" server.host="tidhelp.tiddlyspot.com" server.page.revision="200701210544" changecount="4" taggly.excerpts="excerpts">
 <pre>TiddlyWiki is JeremyRusden's brilliant implementation of a [[Wiki]] in a single file. It uses xhtml, javascript and html. Visit [[www.tiddlywiki.com|http://www.tiddlywiki.com/]] for more information. This document is of course a TiddlyWiki!</pre>
 </div>
-<div title="TiddlyWiki Markup" modifier="ChrisJobling" modified="200803291136" created="200701260332" tags="tiddlywiki wiki markup" server.type="file" server.host="tidhelp.tiddlyspot.com" server.page.revision="200701260332" changecount="5">
+<div title="TiddlyWiki Cheats" modifier="ChrisJobling" modified="200803291205" created="200803291202" changecount="2">
+<pre>* What is [[TiddlyWiki]]
+* What's a [[Wiki]]
+* [[TiddlyWiki Markup]]
+* [[TiddlyWiki Keystrokes|Keystrokes]]
+
+
+!!Acknowledgment
+
+The contents of this [[cheet sheet|CheatSheets]] was orginally published by JimVentola in his excellent [[Tid-Help|http://tidhelp.tiddlyspot.com/]] guide to TiddlyWiki.</pre>
+</div>
+<div title="TiddlyWiki Markup" modifier="ChrisJobling" modified="200803291204" created="200701260332" tags="tiddlywiki wiki markup" server.type="file" server.host="tidhelp.tiddlyspot.com" server.page.revision="200701260332" changecount="6">
 <pre>TiddlyWiki uses Wiki style markup, a way of lightly &quot;tagging&quot; plain text so it can be transformed into HTML. To see the codes that create the following format samples, go into edit mode (by double-clicking within the tiddler or pressing the &quot;edit&quot; button in the hidden menu above). You might want to print out those codes to keep handy as you develop your portfolio. As you can see, you have a lot of control over your text's look and feel.
 
 ! Header Samples
@@ -3020,7 +3060,7 @@ __Underline__
 # Pretty neat don't you think?
 
 ! Tiddler links
-To create a Tiddler link, just use a WikiWord or simply suround the link with double square [[brackets]]. It is quicker to make a WikiWord, but some find them ugly. The double square bracket method makes for a more normal look.
+To create a Tiddler link, just use a [[WikiWord|WikiWords]] or simply suround the link with double square [[brackets]]. It is quicker to make a ~WikiWord, but some find them ugly. The double square bracket method makes for a more normal look.
 
 Note that existing Tiddlers are in bold and empty Tiddlers are in italics. See Creating Tiddlers for details.
 
@@ -3069,10 +3109,7 @@ Subscript: a~~ij~~ = -a~~ji~~
 @@highlight@@ Highlighting is working now it seems.
 @@color(green):green colored@@
 @@bgcolor(#ff0000):color(#ffffff):red colored@@ Hexadecimal numbers are often used for colors in computer codes.
-
-!!Acknowledgment
-
-This [[cheet sheet|CheatSheets]] was orginally published by JimVentola in his excellent [[Tid-Help|http://tidhelp.tiddlyspot.com/]] guide to TiddlyWiki.</pre>
+</pre>
 </div>
 <div title="ToggleTagPlugin" modifier="MPTW" modified="200803240536" created="200803080053" tags="systemConfig">
 <pre>/***
@@ -3151,10 +3188,17 @@ merge(config.macros,{
 |{{{/string}}}|find //string//|
 |{{{n}}} / {{{N}}}|repeat search forwards/backwards|</pre>
 </div>
-<div title="Vi(m)" modifier="ChrisJobling" modified="200803291129" created="200803281503" tags="vi vim [[text editors]] [[IBM DeveloperWorks]] cheatsheets" changecount="30">
-<pre>!The ~Semi-Official IBM developerWorks^^TM^^ vi Cheat Sheet
+<div title="Vi(m)" modifier="ChrisJobling" modified="200803291420" created="200803281503" tags="vi vim [[text editors]] [[IBM DeveloperWorks]] cheatsheets" changecount="40">
+<pre>[[Vi|http://en.wikipedia.org/wiki/Vi]] (pronounced //~Vee-Eye//) is one of the oldest text editors around. Originally developed by BillJoy for BSD Unix, it is now standard on nearly all distributions of Unix and Linux and can be obtained for Windows, and the Mac. Vi is an editor with //modes// and it has a somewhat arcane syntax. Both of these &amp;ldquot;features&amp;rdquot; takes some practice to learn. That said, //vi// is a light-weight text-editor for its power and has many of the features that you'd expect to find only in expensive ~IDEs -- for zero cost! 
+
+Because it has been ported to most computer platforms that you are likely to encounter, //vi// repays the investment in the time that it takes to learn it. It is particularly useful for the quick system administration tasks that require a text editor. In a straight race, the configuration file will have been edited and saved before your graphical editor has even started!
+
+The following cheat sheet summary of the key //vi// commands is from IBM developerWorks (see Acknowledgments). See the references for more documentation.
+
+!vi Cheat Sheet
 
 &lt;&lt;tabs tabsClass
+[[Help]] &quot;getting help in Vim&quot; [[Help, Documentation and Tutorials (Vim)]]
 [[Movement]] &quot;Horizontal and Vertical Movement&quot; [[Movement in Vi]]
 [[Open, Save+Quit]] &quot;Commands for opening and saving files and quitting Vi&quot; [[Open, Save and Quit in Vi]]
 [[Windowing (Vim)]] &quot;Commands for handling multiple windows in Vim&quot; [[Windowing in Vim]]
@@ -3166,10 +3210,19 @@ merge(config.macros,{
 &gt;&gt;
 
 !!Acknowledgement
-The inspiration for this [[cheatsheet|CheatSheets]] is the IBM developerWorks article &amp;ldquo;//vi intro -- the cheat sheet method//&amp;rdquo; by Daniel Robbins, IBM Developer Works, 19 December 2000 updated 15 November 2006. URL: https://www6.software.ibm.com/developerworks/education/l-vi/index.html.</pre>
+The inspiration for this [[cheat sheet|CheatSheets]] is the IBM developerWorks article &amp;ldquo;//vi intro -- the cheat sheet method//&amp;rdquo; by Daniel Robbins, IBM Developer Works, 19 December 2000 updated 15 November 2006. URL: https://www6.software.ibm.com/developerworks/education/l-vi/index.html.
+
+!!References
+The standard implementation of //vi// on most modern Unix distributions is actually [[Vim|http://en.wikipedia.org/wiki/Vim_%28text_editor%29]]. Vim is also available for Windows and Mac from [[www.vim.org|http://www.vim.org/]]. BramMoolenaar, the developer of Vim, has put a lot of effort into documenting Vim and you can access the documentation inside Vim itself using the {{{:help}}} command. If you prefer you can also access the [[documentation|http://www.vim.org/docs.php]] online. A useful way to learn //vi// is from the [[tutorial|http://vimdoc.sourceforge.net/htmldoc/usr_01.html#vimtutor]] which is [[accessible from within the on-line help|Help, Documentation and Tutorials (Vim)]]. </pre>
 </div>
-<div title="Wiki" modifier="JimVentola" created="200701210549" tags="glossary" server.type="file" server.host="tidhelp.tiddlyspot.com" server.page.revision="200701210549" changecount="1">
-<pre>A document that can be written to within a browser. Has many uses, especially for collaborative writing projects. The [[Wikipedia|http://http://en.wikipedia.org/wiki/Main_Page]] is probably the most famous.</pre>
+<div title="Vim Documentation (Picture)" modifier="ChrisJobling" modified="200803291412" created="200803291408" tags="vim help pictures" changecount="3">
+<pre>[img[Access to vim's online documentation from within vim|images/vim-docs.png]] </pre>
+</div>
+<div title="Vim Help Page (Picture)" modifier="ChrisJobling" created="200803291322" tags="pictures vim help" changecount="1">
+<pre>[img[Online help screen in Vim (in gVim for windows)|images/vim-help.png]] </pre>
+</div>
+<div title="Wiki" modifier="ChrisJobling" modified="200803291205" created="200701210549" tags="glossary" server.type="file" server.host="tidhelp.tiddlyspot.com" server.page.revision="200701210549" changecount="2">
+<pre>A Wiki document that can be written to within a browser. Has many uses, especially for collaborative writing projects. The [[Wikipedia|http://http://en.wikipedia.org/wiki/Main_Page]] is probably the most famous.</pre>
 </div>
 <div title="WikiWords" modifier="JimVentola" created="200701210549" tags="glossary" server.type="file" server.host="tidhelp.tiddlyspot.com" server.page.revision="200701210549" changecount="1">
 <pre>A wikiword is a word with two capital letters. JimVentola and MainMenu are wikiwords. Put a tilde (~) in front of one if you want it to behave like a normal word rather than a link.
