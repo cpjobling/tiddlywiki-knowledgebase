@@ -549,10 +549,11 @@ blockquote
 <div title="BramMoolenaar" modifier="ChrisJobling" created="200803291247" tags="people vim" changecount="1">
 <pre>Developer of Vim (vi - iMproved).</pre>
 </div>
-<div title="CheatSheets" modifier="ChrisJobling" modified="200803291200" created="200803281456" tags="cheatsheets" changecount="8">
+<div title="CheatSheets" modifier="YourName" modified="200804251620" created="200803281456" tags="cheatsheets" changecount="11">
 <pre>* TextEditors
 * [[TiddlyWiki|TiddlyWiki Cheats]]
-* [[Regular Expressions]]</pre>
+* [[Regular Expressions]]
+* [[Unix]]</pre>
 </div>
 <div title="ChrisJobling" modifier="ChrisJobling" created="200803291134" changecount="2">
 <pre>Dr Chris P. Jobling is a lecturer in Internet and software technologies at Swansea University. His home page is [[here|http://eehope.swan.ac.uk/~eechris/dokuwiki/index.php]] and he has a blog at [[crispyj2.blogspot.com|http://crispyj2.blogspot.com]].</pre>
@@ -1102,6 +1103,15 @@ cf. [[TiddlyWiki.com|http://www.tiddlywiki.com/#EmbeddedImages]]</pre>
 |{{{o}}} / {{{O}}}|open new line above/below current line, then insert|
 |{{{cc}}}|replace current line|
 |{{{c}}}//move//|replace to //move//|</pre>
+</div>
+<div title="Install package build tools" modifier="YourName" modified="200804251621" created="200804251618" tags="packages apt-get tips howto linux ubuntu" server.type="file" server.host="file://E:\sdev\skb\scrispy.html" changecount="3">
+<pre>Install the basic tools required for building binary packages:
+{{{
+$ sudo apt-get install devscripts build-essential fakeroot
+}}}
+
+[Source [[Ubuntu Hacks, #63|http://safari.oreilly.com/0596527209/I-0596527209-CHP-6-SECT-10#ID-ID-d2599e0-976405]]]
+</pre>
 </div>
 <div title="InstantTimestampPlugin" modifier="MPTW" modified="200803240536" created="200803240239" tags="systemConfig">
 <pre>/***
@@ -2276,6 +2286,37 @@ config.renameTags.init();
 
 </pre>
 </div>
+<div title="Rsync tips" modifier="ChrisJobling" created="200705080858" tags="rsync tips howto" server.type="file" server.host="file://E:\sdev\skb\scrispy.html" server.page.revision="200705080858" changecount="1">
+<pre>To synchronize two directories (Makefile targets):
+{{{
+get:
+	rsync -avuzb --exclude '*~' SRC DST
+put: 
+	rsync -Cavuzb --exclude '*~' SRC DST
+sync:
+	get put
+}}}
+To mirror two directories:
+{{{
+rsync -az -e ssh --delete SRC DST
+}}}
+To backup a directory:
+{{{
+rsync -Cavz SRC DST
+}}}
+! Explanation of the arguments
+{{{
+-C, --cvs-exclude	auto ignore files in the same way CVS does
+-a, --archive	 	you want recursion and you want to preserve file permissions and ownerships, etc.
+-z, --compress		compress files during transfer
+-v, --verbose		verbose mode
+-u, --update		update, skip files already on the receiver
+-b, --backup		backup
+--exclude		exclude these file 
+--delete		delete files that do not exist on the sending side
+-e			alternative remote shell
+}}}</pre>
+</div>
 <div title="SaveCloseTiddlerPlugin" modifier="MPTW" modified="200803240536" created="200803080053" tags="systemConfig">
 <pre>/***
 |Name:|SaveCloseTiddlerPlugin|
@@ -3268,6 +3309,11 @@ merge(config.macros,{
 //}}}
 
 </pre>
+</div>
+<div title="Unix" modifier="YourName" modified="200804251621" created="200708241157" tags="unix tips linux" server.type="file" server.host="file://E:\sdev\skb\scrispy.html" server.page.revision="200708241157" changecount="6">
+<pre>* Ubuntu Linux
+** [[Install package build tools]]
+* [[Rsync tips]]</pre>
 </div>
 <div title="Unordered Lists (TiddlyWiki)" modifier="ChrisJobling" modified="200803291759" created="200803291756" tags="[[unordered lists]] markup tiddlywiki [[block elements]]" changecount="5">
 <pre>{{{
